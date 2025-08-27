@@ -73,14 +73,14 @@ function ProductList() {
           zIndex: 2,
         }}
       >
-        <h2 className="mb-4 text-center">Product List</h2>
+        <h2 className="mb-4 text-center">Project List</h2>
 
         {loading ? (
-          <p className="text-center">Loading products...</p>
+          <p className="text-center">Loading project...</p>
         ) : error ? (
           <p className="text-danger text-center">{error}</p>
         ) : products.length === 0 ? (
-          <p className="text-center">No products available.</p>
+          <p className="text-center">No project available.</p>
         ) : (
           <>
             <div className="row">
@@ -97,7 +97,7 @@ function ProductList() {
                     )}
                     <div className="card-body">
                       <h5 className="card-title">{product.name}</h5>
-                      <p className="card-text">Price: ₹{product.price}</p>
+                      <p className="card-text">client Name: {product.price}</p>
                     </div>
                   </div>
                 </div>

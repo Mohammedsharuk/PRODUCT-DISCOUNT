@@ -82,10 +82,10 @@ function CreateDiscount() {
           zIndex: 2,
         }}
       >
-        <h2 className="mb-4 text-center">Create Discount</h2>
+        <h2 className="mb-4 text-center">Create milestone</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label>Discount Percentage (%)</label>
+            <label>milestone name </label>
             <input
               type="number"
               name="percentage"
@@ -111,7 +111,7 @@ function CreateDiscount() {
           </div>
 
           <div className="mb-3">
-            <label>Select Product</label>
+            <label>Select Project</label>
             <select
               name="productId"
               className="form-control"
@@ -119,7 +119,7 @@ function CreateDiscount() {
               onChange={handleChange}
               required
             >
-              <option value="">-- Choose a Product --</option>
+              <option value="">-- Choose a Project --</option>
               {products.map((product) => (
                 <option key={product._id} value={product._id}>
                   {product.name}

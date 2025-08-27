@@ -89,10 +89,10 @@ function CreateProduct() {
           zIndex: 2,
         }}
       >
-        <h2 className="mb-4 text-center">Add Product</h2>
+        <h2 className="mb-4 text-center">Add Project</h2>
         <form onSubmit={handleSubmit} encType="multipart/form-data">
           <div className="mb-3">
-            <label className="form-label">Product Name</label>
+            <label className="form-label">create project</label>
             <input
               type="text"
               className="form-control"
@@ -104,9 +104,9 @@ function CreateProduct() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Price (₹)</label>
+            <label className="form-label">client name</label>
             <input
-              type="number"
+              type="text"
               className="form-control"
               name="price"
               value={formData.price}
@@ -117,7 +117,7 @@ function CreateProduct() {
           </div>
 
           <div className="mb-3">
-            <label className="form-label">Product Image</label>
+            <label className="form-label">Projuct Image</label>
             <input
               type="file"
               className="form-control"
@@ -128,7 +128,7 @@ function CreateProduct() {
           </div>
 
           <button type="submit" className="btn btn-success w-100" disabled={loading}>
-            {loading ? "Uploading..." : "Add Product"}
+            {loading ? "Uploading..." : "Add project"}
           </button>
         </form>
       </div>

@@ -45,7 +45,7 @@ function DiscountList() {
           background: "#f8f9fa",
         }}
       >
-        <p>Loading discounts...</p>
+        <p>Loading milestone...</p>
       </div>
     );
 
@@ -87,18 +87,18 @@ function DiscountList() {
           overflowY: "auto",
         }}
       >
-        <h2 className="mb-4 text-center">Available Discounts</h2>
+        <h2 className="mb-4 text-center">Available milestone</h2>
 
         {discounts.length === 0 ? (
-          <p className="text-center">No discounts available.</p>
+          <p className="text-center">No discounts milestone</p>
         ) : (
           <>
             <table className="table table-bordered mt-3">
               <thead className="table-light">
                 <tr>
                   <th>s.no</th>
-                  <th>Product</th>
-                  <th>Discount (%)</th>
+                  <th>milestone name </th>
+                  <th>mile stone no </th>
                   <th>Valid Till</th>
                 </tr>
               </thead>

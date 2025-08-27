@@ -12,7 +12,7 @@ app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // serve uploaded images
 
 // MongoDB Connection
-mongoose.connect("mongodb://localhost:27017/product-discount-app", {
+mongoose.connect("mongodb://localhost:27017/project_milestone", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

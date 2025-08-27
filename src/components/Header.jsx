@@ -17,8 +17,8 @@ const Header = ({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        background: "black",
-        color: "yellow",
+        background: "brown",
+        color: "black",
         flexWrap: "wrap",
       }}
     >
@@ -46,28 +46,29 @@ const Header = ({
         className="nav-links"
         style={{
           display: menuOpen ? "block" : "none",
+          color:"black",
           width: "100%",
           marginTop: "10px",
         }}
       >
         <span style={navLinkStyle} onClick={onCreateProductClick}>
-          CREATE PRODUCT
+          CREATE PROJECT
         </span>
         <span style={navLinkStyle} onClick={onProductListClick}>
-          PRODUCT LIST
+          PROJECT LIST
         </span>
         <span style={navLinkStyle} onClick={onCreateDiscountClick}>
-          CREATE DISCOUNT
+          CREATE MILESTONE
         </span>
         <span style={navLinkStyle} onClick={onDiscountListClick}>
-          DISCOUNT LIST
+          MILESTONELIST LIST
         </span>
 
         {/* Styled Roll No & Name */}
         <span
           style={{
             ...navLinkStyle,
-            background: "#0d6efd",
+            background: "#100f10ff",
             padding: "5px 12px",
             borderRadius: "20px",
             color: "#fff",
@@ -78,7 +79,7 @@ const Header = ({
             cursor: "default",
           }}
         >
-          🎓 <span style={{ fontSize: "12px", textAlign:"center"}}>24IT042</span> <br />
+          🎓 <span style={{ fontSize: "12px", textAlign:"center"}}>24IT060</span> <br />
           <span
             style={{
               fontSize: "12px",
@@ -86,7 +87,7 @@ const Header = ({
               letterSpacing: "0.5px",
             }}
           >
-            Mohammed Sharuk A
+            RAKESH
           </span>
         </span>
       </nav>
